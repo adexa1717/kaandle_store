@@ -6,3 +6,4 @@
 .idea/*
 
 venv
+application/db.sqlite3
