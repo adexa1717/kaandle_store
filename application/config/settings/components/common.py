@@ -7,12 +7,16 @@ sys.path.append(str(BASE_DIR / "apps"))
 
 # Application definition
 DEFAULT_APPS = [
+    # default apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # third party apps
+    "django_extensions",
 ]
 
 MIDDLEWARE = [
@@ -67,3 +71,5 @@ TEMPLATES = [
 ]
 
 AUTH_USER_MODEL = "users.CustomUser"
+
+SHELL_PLUS = "ipython"

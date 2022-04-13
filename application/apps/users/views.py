@@ -1,3 +1,7 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 
-# Create your views here.
+
+def current_datetime(request):
+    html = "<html><body>Hello world!</body></html>"
+    return HttpResponse(html)
