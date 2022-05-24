@@ -3,7 +3,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 class AbstractActivityModel(models.Model):
-    is_active = models.BooleanField()
+    is_active = models.BooleanField(default=True)
 
     class Meta:
         abstract = True
